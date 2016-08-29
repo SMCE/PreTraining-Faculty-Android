@@ -12,12 +12,12 @@ public Rect(double w, double l)
   this.width = w;
   this.length = l;
  } 
-public Rect(String color, boolean filled, double w, double l)
+public Rect(double w, double l, String color, boolean filled)
  {
   super(color,filled);
   this.width = w;
   this.length = l;
- }
+  }
 
   public double getwidth()
   {
@@ -47,7 +47,7 @@ public Rect(String color, boolean filled, double w, double l)
     }
   public String toString()
   {
-    return getClass() + "\n" + getcolor()+ "\n" + getfilled() +"\n" + "\n"+ getArea() + "\n" + getPerimeter();
+    return getClass() + "\n" + getcolor()+ "\n" + getfilled() +"\n" +"width: " + getwidth() + " " +"length: "+getlength()+"\n"+ "Area: "+getArea() + " " + "Perimeter: "+getPerimeter();
      
   }
 }
